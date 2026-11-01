@@ -1,0 +1,10 @@
+# Desktop dependencies; decision/runtime code needs only the standard library.
+numpy
+Pillow>=9
+opencv-python
+pynput
+matplotlib
+pytesseract
+# Window management (selects native dependencies for each OS).
+pywinctl>=0.4
+# Optional: python -m pip install mss for backend='mss' and fast Pacman.
