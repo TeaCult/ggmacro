@@ -4,13 +4,9 @@
 
 ### Demo / Tanıtım
 
-
-[Watch the Pacman demo — 45 seconds](https://github.com/TeaCult/ggmacro/blob/main/pacman_cropped.mp4)
-
-[Pacman tanıtımını izle — 45 saniye](https://github.com/TeaCult/ggmacro/blob/main/pacman_cropped.mp4)
+https://github.com/user-attachments/assets/b27d9208-9e65-473a-b11e-20026bc9e13d
 
 Recorded gameplay example; results depend on the game and controller setup.
-
 Oyun kaydı örneğidir; sonuçlar oyuna ve kontrol betiğinin ayarlarına bağlıdır.
 
 ## English
