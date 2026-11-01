@@ -14,11 +14,50 @@ Oyun kaydı örneğidir; sonuçlar oyuna ve kontrol betiğinin ayarlarına bağl
 ggMacro turns AI-guided desktop interaction into reusable smart macro flows:
 **classical automation + screen feedback + optional local d1 decisions.**
 
+**OS-agnostic by design:** one desktop-control API and the same smart-flow
+approach for **Windows, macOS, and Linux/X11**, using platform-native backends.
+Desktop permissions and backend support still apply; see the platform notes below.
+
 An AI can navigate a task, create and test a controller, then hand over a
 standalone Python script. That script can run without the creating AI remaining
 connected. Its flexibility comes from the observations, rules, and decision
 choices it was designed and tested to handle; unfamiliar situations may still
 need human or AI intervention.
+
+What ggMacro does differently
+
+ggMacro focuses on the transition from **AI-guided interaction to a small,
+reusable local controller**. The host AI can read the skill, navigate with the
+library, write and test a task-specific Python file, then supervise it or hand
+it over. Script creation is performed by the host AI following the skill;
+ggMacro does not currently provide an automatic recording-to-code compiler.
+
+- **A standalone deliverable:** generated flows can contain classical macros,
+  screen perception, and a small d1 client without importing this repository.
+  The user installs their stated dependencies and runs the file independently.
+- **Different control rates:** local code handles frequent capture and input;
+  the AI can observe less often, intervene, and revise the flow when needed.
+- **Selective local decisions:** use deterministic functions for predictable
+  work and d1 through Ollama for meaningful choices. Routine execution need
+  not depend on a cloud model or a model call for every action.
+- **OS-agnostic desktop scope:** the same design covers supported Windows,
+  macOS, and Linux desktops, including visual tasks inside games and native
+  applications. Individual flows still need suitable permissions and calibration.
+
+The intended distinction is this combination of a small desktop library,
+agent skill, standalone handoff, and optional local decision layer. Other
+projects also support reusable automation or multiple operating systems;
+actual speed, reliability, and portability should be demonstrated per task.
+
+### Related projects
+
+| Project | Main overlap | ggMacro's focus in comparison |
+| --- | --- | --- |
+| [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) | Records desktop tasks and builds reusable automation with checking and repair. | AI-authored standalone Python flows combining classical logic and optional local d1. |
+| [Stagehand](https://github.com/browserbase/stagehand/blob/main/packages/docs/v3/best-practices/deterministic-agent.mdx) | Turns agent-discovered browser workflows into cached deterministic execution. | Screen-based desktop interaction across supported OSes and applications, with independently runnable task scripts. |
+| [Open Interpreter](https://www.openinterpreter.com/docs/desktop) | AI operates real desktop applications through clicks, typing, and tools. | Adds an explicit workflow for handing repeated work to a reusable local controller. |
+| [Microsoft UFO](https://github.com/microsoft/UFO/blob/main/ufo/README.md) | Windows desktop agents coordinate application tasks using GUI and native APIs. | A small OS-agnostic library and skill, with optional local decisions and standalone handoff. |
+| [SikuliX / OculiX](https://oculix.org/) | Cross-platform visual automation through image recognition and scripts. | An AI authoring/supervision workflow and optional d1 decisions around classical visual macros. |
 
 ### Three workflows
 
