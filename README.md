@@ -1,15 +1,15 @@
 # ggMacro — AI-created smart macro flows
 
-[English](#english) · [Türkçe](#türkçe) · [Agent skill](ggmacro/SKILL.md)
+[Türkçe](#türkçe) · [Agent skill](ggmacro/SKILL.md)
 
-### Demo / Tanıtım
+### Demo 
 
 https://github.com/user-attachments/assets/b27d9208-9e65-473a-b11e-20026bc9e13d
 
 Recorded gameplay example; results depend on the game and controller setup.
-Oyun kaydı örneğidir; sonuçlar oyuna ve kontrol betiğinin ayarlarına bağlıdır.
 
-## English
+
+## ggMacro
 
 ggMacro turns AI-guided desktop interaction into reusable smart macro flows:
 **classical automation + screen feedback + optional local d1 decisions.**
